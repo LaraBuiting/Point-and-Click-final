@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point and Click</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 id="mainTitle"> </h1>
+    <div id="gameWindow">
+        <!--dialog bar-->
+        <div id="dialogueBar" class="gameObject foreground">
+            <div id="dialogueContent">
+
+                <img id="hero" class="gameObject foreground" src="img/portairt.png">
+                <div id="mainCharacterSpeech" class="gameObject foreground speech-bubble">...</div>
+            
+                <div id="counterSpeech" class="gameObject foreground speech-bubble">...</div>
+                <div id="counterCharacter" class="gameObject foreground" src="img/waterfallart.png" alt="waterfall character"></div>
+                <div id="brownBar"></div>
+            </div>
+        </div>
+
+
+        <!--foreground layer-->
+        <div id="door" class="gameObject foreground"></div>
+        <div id="waterfall1" class="gameObject foreground"></div>
+        <div id="waterfall2" class="gameObject foreground"></div>
+
+        <!--main character layer-->
+        <div id="mainCharacter" class="gameObject gameCharacter">
+            <img src="img/mainCharacter.png" alt="picture of main character">
+        </div>
+
+        <!--background layer-->
+        <div id="tilemap" class="gameObject background">
+            <img src="img/tilemap2.png" alt="tilemap">
+        </div>
+    </div>
+    <audio id="characterAudio">
+        <source src="audio/audio_Gibberish - Sound Effect_01.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="counterAudio">
+        <source src="audio/audio_high pitch voice.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
